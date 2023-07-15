@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    left: 200px;
+}
+
+.logo {
+    max-width: 35%;
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.floating-buttons {
+    position:relative;
+    
+    left: -10px;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+
+.floating-buttons button {
+    display: block;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.right-image {
+    max-width: 65%;
+    height: auto;
+    top: -10%;
+    position: relative;
+    right: -90px;
+    margin-top: -28%;
+}
+
+.line {
+    width: 50%;
+    height: 3px;
+    margin-right: 1040px;
+    margin-left: 100px;
+    margin-top: -270px;
+    background-color: rgb(50, 50, 211);
+}
+
+.footer {
+    
+    padding: 30px;    
+    background-color: white;
+}
+
+.footer .button {
+    display: inline-block;
+    left: 25px;
+    margin-right:250px;
+    background-color: white;
+    color:white;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 16px;
+    align-items: center;  
+}
+
+.face {
+    height: 35px;
+    width: 35px;
+}
+
+.insta {
+    height: 35px;
+    width: 35px;
+}
+.billetera{
+    width: 35px;
+    height: 35px;
+}
+.busqueda{
+    width: 35px;
+    height: 35px;
+}
+.ayuda{
+    width: 35px;
+    height: 35px;
+}
+.float-button {
+    position: relative;    
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+
+.pago {
+    font-size: 60px;
+    position: relative;
+    left: 160px;
+    margin-top: -330px;
+}
+
+.pago-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Prioridad{
+    color: gray;
+    position: relative;
+    left: -350px;
+    top: -15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.a {
+    text-decoration: none;
+}
+
+/* Media queries */
+@media screen and (max-width: 800px) {
+    header {
+        left: 0;
+        text-align: center;
+    }
+
+    .logo {
+        max-width: 100%;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .floating-buttons {
+        position: static;
+        transform: translateY(0);
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .right-image {
+        max-width: 100%;
+        margin-top: 20px;
+        right: 0;
+    }
+    
+
+    .line {
+        margin: 20px 0;
+    }
+
+    .footer .button {
+        margin-right: 0;
+        margin-bottom: 10px;
+        display: block;
+    }
+}
